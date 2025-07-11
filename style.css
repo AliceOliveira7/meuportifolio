@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --rosa: #ff91b2;
+  --rosa-claro: #fff0f3;
+  --rosa-escuro: #ff5182;
+  --branco: #ffffff;
+  --preto: #333333;
+  --cinza: #4d4d4d;
+}
+a{
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--rosa-claro);
+  color: var(--preto);
+  line-height: 1.6;
+}
+
+.bodega {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo{
+  max-width: 30px;
+}
+header {
+  background-color: var(--branco);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+header .bodega {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.marca-da-fiota img {
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.marca-da-fiota img:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.cardapio-dos-grandao ul {
+  display: flex;
+  list-style: none;
+}
+
+.cardapio-dos-grandao li {
+  margin-left: 35px;
+}
+
+.cardapio-dos-grandao a {
+  text-decoration: none;
+  color: var(--preto);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.cardapio-dos-grandao a:hover {
+  color: var(--rosa-escuro);
+}
+
+.cardapio-dos-grandao a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--rosa-escuro);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.cardapio-dos-grandao a:hover::after {
+  width: 100%;
+}
+
+button {
+  background-color: var(--rosa-escuro);
+  color: var(--branco);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .botao-pra-mandar input:hover {
+  background-color: var(--rosa);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 81, 130, 0.3);
+}
+
+.letreiro {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--cinza);
+  font-weight: 700;
+}
+
+.letreiro span {
+  color: var(--rosa-escuro);
+}
+
+.arrumacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+main {
+  margin-top: 90px;
+}
+
+.cabeceira-do-site {
+  padding: 80px 0;
+}
+
+.cabeceira-do-site .prosa {
+  flex: 1.2;
+}
+
+.cabeceira-do-site h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.cabeceira-do-site h1 span {
+  color: var(--rosa-escuro);
+}
+
+.cabeceira-do-site p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.retrato-de-fundo {
+  flex: 1;
+  text-align: center;
+}
+
+.retrato-de-fundo img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.meus-saberes {
+  padding: 80px 0;
+}
+
+.caixote-de-habilidade {
+  background-color: var(--branco);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+}
+
+.caixote-de-habilidade:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 81, 130, 0.2);
+}
+
+.caixote-de-habilidade i {
+  font-size: 4rem;
+  color: var(--rosa-escuro);
+  margin-bottom: 20px;
+}
+
+.caixote-de-habilidade h3 {
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+
+.caixote-de-habilidade p {
+  font-size: 1rem;
+  color: var(--cinza);
+}
+
+.quem-sou-eu {
+  padding: 80px 0;
+  background-color: var(--branco);
+}
+
+.retrato-da-caboca img {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.resenha {
+  flex: 1.5;
+}
+
+.resenha h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.resenha h2 span {
+  color: var(--rosa-escuro);
+  display: block;
+}
+.resenha p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.botoes-pra-fuxicar button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minhas-invenção {
+  padding: 80px 0;
+}
+
+section.minhas-invenção .arrumacao {
+  gap: 30px;
+}
+
+.janela-do-projeto {
+  flex: 1;
+  min-width: 300px;
+  height: 450px;
+  background-color: var(--branco);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-position 8s linear;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.janela-do-projeto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-position: top center;
+}
+
+.visagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--branco);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.janela-do-projeto:hover .visagem {
+  opacity: 1;
+}
+
+.deixar-recado {
+  padding: 80px 0;
+  background-color: #fde6eb;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  background-color: var(--branco);
+  border: 1px solid transparent;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--rosa-escuro);
+}
+
+form textarea {
+  height: 160px;
+  resize: vertical;
+}
+
+form .botao-pra-mandar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .botao-pra-mandar input {
+  width: 200px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--rosa-escuro);
+  color: var(--branco);
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#subir-ligeiro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--rosa-escuro);
+  color: var(--branco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+  transform: translateY(20px);
+}
+#subir-ligeiro.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#subir-ligeiro:hover {
+    background-color: var(--rosa);
+    transform: scale(1.1);
+}
+
+.puxador-do-menu, .menu-dos-pitoco {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  .arrumacao {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .cabeceira-do-site .arrumacao {
+    flex-direction: column-reverse;
+  }
+  .cabeceira-do-site .prosa, .quem-sou-eu .resenha {
+    text-align: center;
+  }
+  .quem-sou-eu .resenha h2 {
+    text-align: center;
+  }
+  .quem-sou-eu .resenha h2 span {
+    display: inline;
+  }
+  .quem-sou-eu .botoes-pra-fuxicar {
+      justify-content: center;
+  }
+  
+  .cardapio-dos-grandao, .botao-pra-contato > a {
+    display: none;
+  }
+  
+  .puxador-do-menu {
+    display: block;
+  }
+
+  .puxador-do-menu button {
+      background-color: transparent;
+      color: var(--preto);
+      font-size: 2rem;
+      border: 0;
+      padding: 0;
+  }
+  .menu-dos-pitoco {
+    background-color: var(--branco);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  }
+  .menu-dos-pitoco.open {
+    max-height: 300px;
+    border-top: 1px solid var(--rosa-claro);
+  }
+  .menu-dos-pitoco ul {
+      list-style: none;
+      text-align: center;
+  }
+  .menu-dos-pitoco li a {
+      display: block;
+      padding: 15px 0;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: var(--preto);
+      font-weight: 600;
+  }
+  .menu-dos-pitoco li a:hover {
+      background-color: var(--rosa-claro);
+      color: var(--rosa-escuro);
+  }
+
+  .cabeceira-do-site h1 { font-size: 2.5rem; }
+  .resenha h2 { font-size: 2.2rem; }
+  .letreiro { font-size: 2.2rem; }
+}
+
+@media screen and (max-width: 480px) {
+    .botao-pra-contato button, .botoes-pra-fuxicar button {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+    .botoes-pra-fuxicar button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .janela-do-projeto { height: 350px; }
+}

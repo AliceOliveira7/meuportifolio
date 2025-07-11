@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio da Alice</title>
+</head>
+<body>
+    <header>
+        <div class="bodega">
+            <div class="marca-da-fiota">
+                <a href="#">
+                    <img src="img/hellologo.jpeg" alt="Logo da Alice" />
+                </a>
+            </div>
+            <nav class="cardapio-dos-grandao">
+                <ul>
+                    <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+                    <li><a href="#meus-projetos">Meus Projetos</a></li>
+                    <li><a href="#meus-saberes">Meus Sabê</a></li>
+                </ul>
+            </nav>
+            <div class="botao-pra-contato">
+                <a href="#deixar-recado">
+                    <button>Contato</button>
+                </a>
+            </div>
+            
+            <div class="puxador-do-menu">
+                <button><i class="bi bi-list"></i></button>
+            </div>
+        </div>
+        
+        <nav class="menu-dos-pitoco">
+            <ul>
+                <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+                <li><a href="#minhas-invenção">Minhas Invenção</a></li>
+                <li><a href="#meus-saberes">Meus Sabê</a></li>
+                <li><a href="#deixar-recado">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="cabeceira-do-site">
+            <div class="bodega">
+                <div class="arrumacao">
+                    <div class="prosa">
+                        <h1>Oi, eu sou a Alice<span>!</span></h1>
+                        <p>Seje muito bem-vindo(a) ao meu portfólio. Sou uma desenvolvedora web que adora criar coisa digital que faça a diferença. Eu boto fé que tecnologia é mais que código e tela: é uma ponte que junta ideias com precisão.</p>
+                        <p>Pode fuxicar meus projetos, espiar meus saberes e, se quiser, dê um alô. Vai ser um prazer enorme colocar seu projeto pra frente!</p>
+                        <a href="#deixar-recado">
+                            <button>Fale Comigo</button>
+                        </a>
+                    </div>
+                    <div class="retrato-de-fundo">
+                        <img src="img/eukitty.jpg" alt="Ilustração da Alice" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="meus-saberes" class="meus-saberes">
+          <div class="bodega">
+            <h2 class="letreiro">MEUS <span>SABÊ</span></h2>
+            <div class="arrumacao">
+              <div class="caixote-de-habilidade">
+                <i class="bi bi-code-slash"></i>
+                <h3>Desenvolvimento</h3>
+                <p>Tenho uma queda por desenrolar na web, com sabedoria em HTML, CSS e JavaScript pra fazer umas interface ajeitada e que se ajeita em todo canto.</p>        
+              </div>
+
+               <div class="caixote-de-habilidade">
+                <i class="bi bi-braces"></i>
+                <h3>Linguagens</h3>
+                <p>Me embrenhando agora nesse mundo da programação. Minha ciência atual é com Python, C e Java.</p>
+              </div>
+
+              <div class="caixote-de-habilidade">
+                <i class="bi bi-film"></i>
+                <h3>Gostos</h3>
+                <p>Apesar do site ser todo fofinho, sou uma viciada em filme e série de terror. Se deixar, eu passo o dia maratonando visagem.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quem-sou-eu" class="quem-sou-eu">
+          <div class="bodega">
+            <div class="arrumacao">
+              <div class="retrato-da-caboca">
+                <img src="img/kuromi.jpg" alt="Foto da Alice" />
+              </div>
+              <div class="resenha">
+                <h2>PRAZER, <span>SOU ALICE OLIVEIRA!</span></h2>
+                <p>Sou uma estudante curiosa e dedicada, que ama desenvolvimento web e por tudo que a tecnologia pode aprontar pra melhorar nosso dia a dia. Tô sempre na busca de aprender mais, porque eu acredito que cada projeto é um jeito de crescer.</p>
+                <p>Mais do que aprender um linguajar novo, dou valor ao lado gente da tecnologia. Tô sempre pronta para o trabalho, trocar ideia e dar vida a projeto que faz a diferença.</p>
+                <div class="botoes-pra-fuxicar">
+                    <a href="https://instagram.com" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="https://linkedin.com/in/aliceoliveira07/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                    <button class="botao-de-email" onclick="copiarOEmail()" title="Copiar e-mail"><i class="bi bi-envelope-fill"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="minhas-invenção" class="minhas-invenção">
+          <div class="bodega">
+            <h2 class="letreiro">MEUS<span>PROJETOS</span></h2>
+            <div class="arrumacao">
+              
+              <div class="janela-do-projeto" style="background-image: url(img/dandara.jpg);">
+                <a href="https://view.genially.com/675878795c9e35a944a99682/interactive-content-cyber" class="visagem">Trabalho Acadêmico</a>
+                
+              </div>
+              
+              <div class="janela-do-projeto" style="background-image: url(img/reciclar-terra.avif);">
+                <a href="https://erick-breno.github.io/PROJETO-SUSTENTAVEL/" class="visagem">Site para ASCAMAREA</a>
+              </div>
+
+               <div class="janela-do-projeto" style="background-image: url(img/spn.jpg);">
+                <a href="https://aliceoliveira7.github.io/Supernatural/" class="visagem">Site para Supernatural</a>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section id="deixar-recado" class="deixar-recado">
+          <div class="bodega">
+            <h2 class="letreiro">DEIXE UM <span>RECADO</span></h2>
+            <form action="" method="POST">
+              <input type="text" name="nome" placeholder="Seu nome todin:" required>
+              <input type="email" name="email" placeholder="Seu e-mail:" required>
+              <input type="tel" name="celular" placeholder="Seu celular: (se quiser)">
+              <textarea name="mensagem" placeholder="Sua prosa:" required></textarea>
+              <div class="botao-pra-mandar">
+                  <input type="submit" value="ENVIAR">
+              </div>
+            </form>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bodega">
+            <p>© 2025 Portfólio da Alice. Quem copiar é um baitola.</p>
+        </div>
+    </footer>
+    
+    <a href="#" id="subir-ligeiro" class="botao-pra-subir">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
