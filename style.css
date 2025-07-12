@@ -264,6 +264,7 @@ main {
 
 .minhas-invenção {
   padding: 80px 0;
+  display: flex;
 }
 
 section.minhas-invenção .arrumacao {
@@ -403,10 +404,15 @@ footer p {
   display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1021px) {
   .arrumacao {
     flex-direction: column;
     gap: 40px;
+  }
+  .janela-do-projeto{
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
   }
   .cabeceira-do-site .arrumacao {
     flex-direction: column-reverse;
